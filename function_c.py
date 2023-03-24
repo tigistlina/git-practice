@@ -3,9 +3,9 @@ def merge_lists(list_a, list_b):
         a combination of list_a and list_b
         without any duplicate elements.
     """
-    list_a = set(list_a)
-    list_b = set(list_b)
-    return list_a.union(list_b)
+
+    return list(set(list_a) | set(list_b))
+
 
 
 if __name__ == "__main__":
